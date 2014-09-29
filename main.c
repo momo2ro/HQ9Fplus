@@ -16,7 +16,7 @@ int main(int argc, char *argv[]) {
                 printf(USAGE);
                 exit(0);
             case 'i':
-                interpreter();
+                shell();
                 exit(0);
             case 'p':
                 if(optind == argc) {
@@ -31,7 +31,7 @@ int main(int argc, char *argv[]) {
     }
 
     if(optind == argc) {
-        file_compile(stdin);
+        file_open(stdin);
     }
     else {
         argvfile(argc, argv, p);
@@ -51,7 +51,7 @@ static void argvfile(int argc, char *argv[], int p) {
         }
 
         if(!p) {
-            file_compile(f);
+            file_open(f);
         }
         else {
             file_name(argv[i]);

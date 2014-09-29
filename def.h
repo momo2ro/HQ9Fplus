@@ -1,8 +1,8 @@
 #ifndef DEF_H
 #define DEF_H
 
-int interpreter();
-int file_compile(FILE *f);
+int shell();
+int file_open(FILE *f);
 int file_name(char *name);
 int print_result(char *source);
 void replace_char(char *source, char bef, char aft);

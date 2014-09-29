@@ -4,7 +4,7 @@
 #include <malloc.h>
 #include "def.h"
 
-int interpreter() {
+int shell() {
     char *source;
 
     source = (char *)malloc(BUFFERSIZE * sizeof(char));

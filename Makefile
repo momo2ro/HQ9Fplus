@@ -1,5 +1,5 @@
 PROGRAM = hq9fp
-SRCS = main.c file_compile.c interpreter.c file_name.c print_result.c replace_char.c
+SRCS = main.c file_open.c shell.c file_name.c print_result.c replace_char.c
 OBJS = $(SRCS:%.c=%.o)
 DEPS = $(SRCS:%.c=%.d)
 CC = gcc
